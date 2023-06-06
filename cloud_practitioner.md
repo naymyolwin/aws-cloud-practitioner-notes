@@ -66,3 +66,14 @@
 - root account only for special administrative tasks
 - 3 Identities, Users, User Group and Roles
 - Role, similar to a user but does not have credentials, use temporarily by who need it.
+- Policiy, permission will attached policy.
+
+### MFA, Multi-Factor Authentication
+
+- something you know, password
+- something you have, phone
+- something you are, fingerprint
+- 3 kind of devices
+  - Virtual MFA device, Authy
+  - U2F security key, Yubikey
+  - Other hardware MFA, Gemalto
