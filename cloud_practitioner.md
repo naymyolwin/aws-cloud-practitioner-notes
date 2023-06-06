@@ -1,6 +1,6 @@
 # AWS Cloud Practitioner
 
-## Foundational Services
+## Foundational Services (26%)
 
 - COMPUTE: Elastic Compute Cloud (EC2)
 - DATABASE: Relational Database Service (RDS) and DynamoDB
@@ -36,4 +36,33 @@
 - Design for failure
 - Decouple components (loose coupling, microservices, monolithic)
 - Implement elasticity
--
+- Think parallel
+
+## Security and Compliance (25%)
+
+### AWS Shared Responsibility Model
+
+- Infrastructure as a Service (IaaS)
+  - Virtualization
+  - Servers
+  - Storage
+  - Networking
+- Platform as a Service (PaaS)
+  - Runtime
+  - Middleware
+  - Operating System
+  - IaaS
+- Software as a Service (SaaS)
+
+  - Application
+  - Data
+  - PaaS
+
+### Identity and Access Management (IAM)
+
+- service used to securely control access to your AWS resources
+- controls authentication and authorization
+- always work in your IAM account with lease number of permission
+- root account only for special administrative tasks
+- 3 Identities, Users, User Group and Roles
+- Role, similar to a user but does not have credentials, use temporarily by who need it.
