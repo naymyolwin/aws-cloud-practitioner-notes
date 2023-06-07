@@ -155,6 +155,13 @@
 | Amazon Detective              | Incident Response         | used to quickly get to the root cause of security issues                                                            |
 | AWS Artifact                  | Compliance                | view AWS's internal compliance report and agreements                                                                |
 
-## Technology
+## Technology (33%)
 
-###
+### Configuring AWS CLI
+
+- aws configure
+  - AWS Access Key ID : create access key in IAM user
+  - AWS Secret Access Key : in IAM user
+  - Default region name : region name
+  - Default output format : json
+  - $ aws s3api list buckets
