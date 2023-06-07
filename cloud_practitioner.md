@@ -105,6 +105,56 @@
 
 - Amazon macie, automatically inventories S3 bucket, identifies and analyzes PII data using machine learning and pattern matching, uses finding in cloudwatch or eventbridge to automate workflows and remediation
 
-### Amazon Inspector
+### Amazon Inspector => only applications
 
--
+- automatically detects and scan EC2 and ECR repo for software vulnerabilities and network exposure
+- try to make sense of the finding and assign a risk score
+- use finding to automate workflows and ticketing in SecurityHub or EventBridge
+
+### Amazon GuardDuty
+
+- continuously analyzes network, account and data access in CloudTrail Mgmt and S3 events, VPC Flow and DNS Logs
+- use maching learning, identifies and priortizes potential threads
+- use finding to automate worksflow and remediation using CloudWatch, Lamda
+
+### AWS Config (paid service)
+
+- Inventory, record and audit the configuration of your AWS resources
+
+### AWS Security Hub (paid service)
+
+- pulls everything together into consolidated place where you can view and take actions on security issues.
+- require AWS config
+- works for cross account
+- aggregates data from GuardDuty, Inspector, Macie, IAM Access Analyzer, System Manager and Firewall Manager
+
+### Amazon Detective
+
+- works with GurardDuty findings, automatically distills and organizes data into a graph model
+- Finding root cause quickly
+- builds a linked set of data using maching learning, statistical analysis and grpah theory.
+- provide visualization in Security Hub and GuardDuty
+
+### AWS Artifact
+
+- self-service portal to access AWS's internal compliance reports and agreements
+
+| Service                       | Primary Function          | Points to Remember                                                                                                  |
+| ----------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| AWS Shield                    | Infrasturcture Protection | protect against DDoS attacks                                                                                        |
+| AWS Web Application Firewall  | Infrasturcture Protection | controls incoming and outgoing traffic for applications and websites. based on rule like "Block traffic from IP..." |
+| AWS Key Management System     | Data Protection           | primary service for encryption in AWS. AWS manage the encryption hardware, software and key for you                 |
+| AWS CloudHSM                  | Data Protection           | AWS provisions the hardware and you do everything else                                                              |
+| AWS Certificate Manager (ACM) | Data Protection           | provision, manage and deploy SSL/TLS certificates                                                                   |
+| AWS Secrets Manager           | Data Protection           | securely store and rotate secrets, such as database name/password                                                   |
+| Amazon Macie                  | Data Protection           | scan S3 for personally identifiable information PII                                                                 |
+| Amazon Inspector              | Detection                 | monitors EC2 instances and ECR repositories for software vulnerabilities and network exposure                       |
+| Amazon GuardDuty              | Detection                 | monitor AWS accounts, network and S3 for malicious activity                                                         |
+| AWS Config                    | Detection                 | inventory of resources and recording fo configuration / changes                                                     |
+| AWS Security Hub              | Detection                 | consolidated view of all thing security (pull from many other services into a dashbord)                             |
+| Amazon Detective              | Incident Response         | used to quickly get to the root cause of security issues                                                            |
+| AWS Artifact                  | Compliance                | view AWS's internal compliance report and agreements                                                                |
+
+## Technology
+
+###
