@@ -77,3 +77,34 @@
   - Virtual MFA device, Authy
   - U2F security key, Yubikey
   - Other hardware MFA, Gemalto
+
+### AWS security, identity and compliance services
+
+- AWS Shield to protect from Distributed Denial of Service, DDOS
+  - Standard : Free, Portects from most DDOS
+  - Advanced : Paid, Protects from more sophisticated attacks, integrate with other services like CloudFron, Route 53 and Elastic Load Balancing, aldo include AWS Web Application Firewall (WAF)
+
+### Encryption
+
+- AWS Key Management System (KMS), primary service for encryption in AWS
+- AWS CloudHSM, Hardware Security Module, AWS provision the hardware and you do everything else
+
+### Type of Keys
+
+- AWS Managed keys
+- Customer Managed keys
+- Custom Key store
+
+### AWS Certificate Manager (ACM)
+
+### AWS Secrets Manager
+
+- the recommanded way to protect secrets ( username and password ) needed by your application and services
+
+### Personally Identifiable Information (PII)
+
+- Amazon macie, automatically inventories S3 bucket, identifies and analyzes PII data using machine learning and pattern matching, uses finding in cloudwatch or eventbridge to automate workflows and remediation
+
+### Amazon Inspector
+
+-
