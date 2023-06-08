@@ -221,3 +221,7 @@
 - Network Load Balancer : Handle TCP, UDP, TLS. Ultra-high performance, ultra-low latencies
 - Gateway Load Balancer : Used to deploy and manage third-party virtual appliances such as firewalls, intrusion detection and prevention systems
 - Classic Load Balancer : Previous generation load balancer for use with the EC2-Classic network
+
+### Auto Scaling Groups
+
+-
