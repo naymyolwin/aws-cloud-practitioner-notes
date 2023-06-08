@@ -164,4 +164,60 @@
   - AWS Secret Access Key : in IAM user
   - Default region name : region name
   - Default output format : json
-  - $ aws s3api list buckets
+  - $ aws s3api list-sbuckets
+
+### Cloud shell
+
+### Cloud Deployment Models
+
+- Cloud (public)
+- On-premises (private)
+- Hybrid
+
+### AWS Connectivity Options
+
+- Site-to-Site VPN
+- AWS Direct Connect
+
+### Summary
+
+#### Ways to work with AWS
+
+- AWS management console (browser)
+- Programmatic access
+  - from local machine, both require access key ID and secrets
+    - Software Developer Kit (SDK)
+    - Command Line Interface (CLI)
+  - AWS Cloudshell
+    - Browser-based; doesn't require access key ID
+
+#### Deployment Models
+
+- Public CLoud
+- On-premises
+- Hybrid
+  - Connectivity : Site-to-Site VPN or Direct Connect
+
+### Elastic Compute Cloud (EC2)
+
+- Easy to scale
+- Reliable
+- Use with other services
+- Only pay for what you use
+- Share responsible as IaaS
+
+### EC2 Type/Purchasing Option
+
+- On-Demand Instances : Default option, Pay by the second while instance is running (minimum 60 seconds)
+- Reserved Instances : Reserve instances for 1-3 years, Saving of up to 70%
+- Spot Instances : Bid on unused EC2 capacity, Saving up to 90% but can lose instance at any time
+- Dedicated Hosts : Book an entier physical server and bring you own licenses, Can be purchased on-demand or reserved
+- Dedicated Instances : Ensure no other AWS customer shares your hardware, pay by the hour
+- Capacity Reservations : Reserve capacity for instances in a specific availability zone for any duration
+
+### Elastic Load Balancing
+
+- Application Load Balancer (ALB) : handle http/https traffic
+- Network Load Balancer : Handle TCP, UDP, TLS. Ultra-high performance, ultra-low latencies
+- Gateway Load Balancer : Used to deploy and manage third-party virtual appliances such as firewalls, intrusion detection and prevention systems
+- Classic Load Balancer : Previous generation load balancer for use with the EC2-Classic network
